@@ -17,8 +17,10 @@ Le script :
 
 ## Prérequis
 
-Python
-- Python 2.7.18 64 bit
+- terminal MINTTY (installé via git pour Windows) OU ms-dos
+- Python 3.6.8
+- les modules python dans le répertoire `modules_python`
+
 
 Librairies :
 - aenum 2.2.4
@@ -49,31 +51,14 @@ Librairies :
 - zope.interface 5.1.2
 
 
-## Installation
+## Activer une session virtuelle Python
 
-### Installation de Pyhton 2.7
+Pour toute opération (installation ou utilisation) on va se mettre dans une session virtuelle Python. Voir [la procédure](python_venv.md) pour mettre en place une session virtuelle Python.
 
-On a installé un Python 2.7 officiel sous /c/python/python_2.7.18/
-Car pas PIP dans le python de QGIS 2.18
-
-Tester dans un terminal MS-DOS
-
-	python.exe --version
-	=> Python 2.7.18
-
-	python.exe -m pip --version
-	=> pip 19.2.3 from C:\python\2.7.18\lib\site-packages\pip (python 2.7)
+`source ./venv/Scripts/activate`
 
 
-ne pas oublier de créer les 2 variables d'environnement Windows pour que le path vers cette version de Python soit utilisable depuis un terminal
-
-
-### installation des librairies Python
-
-Ouvrir un explorateur Windows et aller  dans le répertoire de traitement
-Avec 7ZIP : dézipper bundle.pip-bundle dans un répertoire
-=> cela crée plein de fichiers
-renommer le répertoire en "librairies"
+## installation des librairies Python
 
 Ouvrir un terminal MS-DOS
 Aller dans le répertoire de traitement
@@ -95,7 +80,7 @@ Créer une variable d'environment GDAL_DATA qui pointe vers C:\python\2.7.18\Lib
 
 Pour info : ctrl + maj + V pour coller des commandes ms-dos
 
---------
+
 Comme on a un problème avec les chemins Windows : on va dans le répertoire à traiter
 Ainsi on appellera le répertoire courant.
 
