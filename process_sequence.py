@@ -193,14 +193,14 @@ if not args.nopreprocess:
 					print("\nStart date read from IML : %s" % currentMetadata["time"])
 					askChangeDate = None
 					while askChangeDate != "y" and askChangeDate != "n":
-						askChangeDate = raw_input("Do you want to use your date instead (%s) ? (y/n) " % args.date.date())
+						askChangeDate = input("Do you want to use your date instead (%s) ? (y/n) " % args.date.date())
 
 					if askChangeDate == "y":
 						fixStartDate = True
 						hour = ""
 						hourRgx = re.compile("\d{2}\:\d{2}")
 						while not hourRgx.match(hour):
-							hour = raw_input("Set the capture start time (in HH:MM format) : ")
+							hour = input("Set the capture start time (in HH:MM format) : ")
 
 						fixedStartDate = (datetime.datetime.strptime(str(args.date.date()) + " " + hour, '%Y-%m-%d %H:%M') - datetime.datetime.fromtimestamp(0)).total_seconds()
 						fixedStartDelta = float(value)
@@ -209,8 +209,9 @@ if not args.nopreprocess:
 			elif key == "Xyz":
 				coords = value.split(" ")
 				ptx = projectCoordinates(coords[0], coords[1])
-				currentMetadata["x"] = ptx.GetX()
-				currentMetadata["y"] = ptx.GetY()
+				# X/Y are inverted in IML file
+				currentMetadata["y"] = ptx.GetX()
+				currentMetadata["x"] = ptx.GetY()
 				currentMetadata["z"] = coords[2]
 
 			# HRP = heading/roll/pitch
@@ -222,7 +223,7 @@ if not args.nopreprocess:
 
 	# Write metadata as CSV
 	csvpath = join(args.folder, "0_mapillary.csv")
-	with open(csvpath, 'w') as csvfile:
+	with open(csvpath, 'w', newline='') as csvfile:
 		# CSV header
 		# They should have same naming as in currentMetadata
 		fieldnames = ['image', 'time', 'x', 'y', 'z', 'h']
@@ -231,7 +232,8 @@ if not args.nopreprocess:
 
 		# CSV data
 		for pic in picturesMetadata.values():
-			writer.writerow(pic)
+			if len(pic) > 0:
+				writer.writerow(pic)
 
 	# Print CSV processing results
 	print("")
@@ -241,7 +243,7 @@ if not args.nopreprocess:
 
 	# Call Mapillary CSV processor
 	if not args.noexif:
-		process_csv(folderPictures, csvpath, filename_column=1, timestamp_column=2, latitude_column=4, longitude_column=3, heading_column=6, altitude_column=5, time_format="%Y-%m-%dT%H:%M:%S.%f", header=True)
+		process_csv(folderPictures, csvpath, filename_column=1, timestamp_column=2, longitude_column=3, latitude_column=4, heading_column=6, altitude_column=5, time_format="%Y-%m-%dT%H:%M:%S.%f", header=True)
 	else:
 		print("Pictures EXIF metadata update is skipped")
 else:
@@ -256,7 +258,7 @@ if not args.noupload:
 	process_sequence_properties(folderPictures, cutoff_distance=100, cutoff_time=300, duplicate_distance=2, duplicate_angle=10, verbose=True, rerun=True, skip_subfolders=True)
 	process_upload_params(folderPictures, args.username, verbose=True, rerun=True, skip_subfolders=True)
 	insert_MAPJson(folderPictures, verbose=True, rerun=True, skip_subfolders=True)
-	upload(folderPictures, verbose=True, number_threads=4, max_attempts=4, skip_subfolders=True)
+	upload(folderPictures, number_threads=4, max_attempts=4, skip_subfolders=True)
 	post_process(folderPictures, verbose=True, skip_subfolders=True)
 else:
 	print("Pictures upload is skipped")
