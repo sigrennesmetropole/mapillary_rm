@@ -19,81 +19,41 @@ Le script :
 
 - terminal MINTTY (installé via git pour Windows) OU ms-dos
 - Python 3.6.8
-- les modules python dans le répertoire `modules_python`
+- les modules python dans le répertoire `modules_python` ou listés dans le fichier `requirements.txt`
 
 
-Librairies :
-- aenum 2.2.4
-- argparse 1.4.0
-- certifi 2020.6.20
-- chardet 3.0.4
-- colorama 0.4.4
-- construct 2.8.8
-- DateTime 4.3
-- ExifRead 2.1.2
-- gpxpy 0.9.8
-- idna 2.7
-- mapillary_tools 0.5.3
-- piexif 1.0.13m
-- Pillow 2.9.0
-- py 1.9.0
-- pymp4 1.1.0
-- pynmea2 1.12.0
-- pyproj 2.2.2
-- pytest 3.2.3
-- python_dateutil 2.7.3
-- pytz 2020.1
-- requests 2.20.0
-- setuptools 44.1.1
-- six 1.15.0
-- tqdm 2.2.4
-- urllib3 1.24.3
-- zope.interface 5.1.2
+## Ouvrir un shell Git bash
+
+- aller dans le répertoire `C:\Users\acces.sig\Documents\mapillary_rm`
+- clic-droit > Git bash here
+
+![](images/git_bash.png)
 
 
 ## Activer une session virtuelle Python
 
-Pour toute opération (installation ou utilisation) on va se mettre dans une session virtuelle Python. Voir [la procédure](python_venv.md) pour mettre en place une session virtuelle Python.
+**Pour toute opération (installation ou utilisation) on va se mettre dans une session virtuelle Python**. Voir [la procédure](python_venv.md) pour mettre en place une session virtuelle Python.
 
 `source ./venv/Scripts/activate`
 
 
-## installation des librairies Python
-
-Ouvrir un terminal MS-DOS
-Aller dans le répertoire de traitement
-
-	cd C:\Users\acces.sig\Documents\mapillary\traitement
+## Installation des librairies Python (à ne faire qu'une fois)
 
 On installe les librairies, via un script car il y a un ordre à cause des dépendances
 
-	install_librairies.bat
+	install_librairies.sh
 
-Vérifier qu'il n'y a pas d'erreurs (en rouge)
-Ignorer les alertes de non vérification SSL (car on ne sort pas à cause du proxy)
-
-
-Créer une variable d'environment GDAL_DATA qui pointe vers C:\python\2.7.18\Lib\site-packages\osgeo\data\gdal
+Vérifier qu'il n'y a pas d'erreurs.
 
 
 ## Utilisation
 
-Pour info : ctrl + maj + V pour coller des commandes ms-dos
+Pour info : shfit + insert pour coller des commandes.
 
 
-Comme on a un problème avec les chemins Windows : on va dans le répertoire à traiter
-Ainsi on appellera le répertoire courant.
-
-Ouvrir un terminal MS-DOS.
-
-	g:
-	cd "3_Photos\StreetMapper Aout2016 - 2018-02-16 - ACIGNE_1602"
-	
-	
---------
 Afficher l'aide
 
-	python.exe C:\Users\acces.sig\Documents\mapillary\traitement\process_sequence.py -h
+	process_sequence.py -h
 	
 	usage: process_sequence.py [-h] [--skip-preprocess] [--skip-exif]
 							   [--skip-upload]
@@ -112,36 +72,47 @@ Afficher l'aide
 	  --skip-exif        don't write updated EXIF metadata in pictures
 	  --skip-upload      don't run upload of pictures
 
-	  
 
-Juste analyser et traiter le fichier IML
 
-	python.exe C:\Users\acces.sig\Documents\mapillary\traitement\process_sequence.py --skip-exif --skip-upload 2018-02-16 .\ sig_rm
+**Comme on a un problème avec les chemins Windows : on va dans le répertoire à traiter. Ainsi on appellera le répertoire courant.**
+
+Exemple :
+
+	cd /c/Users/acces.sig/Documents/mapillary_rm/demo/
+	
+
+Puis on choisit le niveau de traitement, en indiquant le chemin absolu vers `process_sequence.py`. 
+
+
+### Juste analyser et traiter le fichier IML
+
+	
+	python /c/Users/acces.sig/Documents/mapillary_rm/process_sequence.py --skip-exif --skip-upload 2018-02-16 ./ sig_rm
 	
 
 
-Juste patcher les métadonnées EXIF des photos : pas de preprocess ni d'upload
+### Juste patcher les métadonnées EXIF des photos : pas de preprocess ni d'upload
 
-	python.exe C:\Users\acces.sig\Documents\mapillary\traitement\process_sequence.py --skip-preprocess --skip-upload 2018-02-16 .\ sig_rm
+	python /c/Users/acces.sig/Documents/mapillary_rm/process_sequence.py --skip-preprocess --skip-upload 2018-02-16 ./ sig_rm
 	
 	
 
-Juste l'upload
+### Juste l'upload
 
-	python.exe C:\Users\acces.sig\Documents\mapillary\traitement\process_sequence.py --skip-preprocess --skip-exif 2018-02-16 .\ sig_rm
+	python /c/Users/acces.sig/Documents/mapillary_rm/process_sequence.py --skip-preprocess --skip-exif 2018-02-16 ./ sig_rm
 
 
+### La totale
 
-La totale
+	python /c/Users/acces.sig/Documents/mapillary_rm/process_sequence.py 2018-02-16 ./ sig_rm
 
-	python.exe C:\Users\acces.sig\Documents\mapillary\traitement\process_sequence.py 2018-02-16 .\ sig_rm
 
 
 A chaque lancement, le script va vérifier les dates dans le fichier IML et demander de valider ou corriger date et heure de début des prises de vues.
 Exemple :
 
 
-	G:\3_Photos\StreetMapper Aout2016 - 2018-02-16 - ACIGNE_1602>python.exe C:\Users\acces.sig\Documents\mapillary\traitement\process_sequence.py --skip-upload 2018-02-16 .\ sig_rm
+	traitement\process_sequence.py --skip-upload 2018-02-16 ./ sig_rm
 	Checking picture validity 16225/16226 (99%)
 	Found 1 IML files
 	Found 16226 JPG files
@@ -152,7 +123,7 @@ Exemple :
 
 
 
-Pour vérifier que les coordonnées sont bonnes on peut ouvrir une image dans XnView
+Pour vérifier que les coordonnées sont bonnes on peut ouvrir une image dans XnView.
 
 menu Edition > métadonnées > Ouvrir la position GPS dans geohack
 
