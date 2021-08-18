@@ -1,11 +1,15 @@
+argparse==1.4.0
 certifi==2021.5.30
 chardet==3.0.4
 construct==2.8.8
+DateTime==4.3
 ExifRead==2.1.2
+GDAL==3.1.4
 gpxpy==0.9.8
 idna==2.7
 mapillary-tools==0.7.4
 piexif===1.0.13m
+Pillow==8.3.1
 pymp4==1.1.0
 pynmea2==1.12.0
 python-dateutil==2.7.3
