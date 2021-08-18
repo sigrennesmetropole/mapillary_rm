@@ -17,7 +17,7 @@ Le script :
 
 ## Prérequis
 
-- terminal MINTTY (installé via git pour Windows) OU ms-dos
+- terminal MINTTY (installé via git pour Windows)
 - Python 3.6.8
 - les modules python dans le répertoire `modules_python` ou listés dans le fichier `requirements.txt`
 
