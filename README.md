@@ -45,6 +45,15 @@ On installe les librairies, via un script car il y a un ordre à cause des dépe
 
 Vérifier qu'il n'y a pas d'erreurs.
 
+**Note pour Linux**
+
+Et si hors réseau bloqué : utiliser le fichier `requirements.txt` puis installer manuellement les mapillary-tools :
+
+```
+venv venv --system-site-packages
+python3 -m pip install -r requirements.txt
+python3 -m pip install modules_python/mapillary_tools-0.7.4-py3-none-any.whl
+```
 
 ## Utilisation
 
