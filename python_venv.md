@@ -15,6 +15,19 @@ Se déplacer dans le répertoire du projet puis taper :
 
 cela va créer un répertoire `venv` qui contient l'environnement Python qui sera utilisé. Il y a un répertoire `Include`, un répertoire `Lib` et un répertoire `Scripts`.
 
+**Note pour Linux**
+
+Sous Linux il y a un problème avec GDAL qui refuse de compiler. Il suffit de créer le venv de cette manière : 
+
+`python3 -m venv venv --system-site-packages`
+
+Puis : 
+
+```
+python3 -m pip install GDAL
+Requirement already satisfied: GDAL in /usr/lib/python3/dist-packages (3.0.4)
+```
+
 
 ## Activer une session virtuelle Python
 
