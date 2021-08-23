@@ -1,0 +1,5 @@
+git+https://github.com/mapillary/Piexif
+git+https://github.com/mapillary/mapillary_tools
+argparse
+datetime
+Pillow
