@@ -18,11 +18,15 @@ Le script :
 ## Prérequis
 
 - terminal MINTTY (installé via git pour Windows)
+- `alias python='winpty -Xallow-non-tty python.exe'` dans le fichier `bash_profile` **<<< important**
 - Python 3.6.8
 - les modules python dans le répertoire `modules_python` ou listés dans le fichier `requirements.txt`
 
 
 ## Ouvrir un shell Git bash
+
+**IMPORTANT** : pour pouvoir faire la saisie du mot de passe à l'étape de demande d'identification pour obtenir le token, sous git bash pour Windows il faut impérativement rajouter l'alias mentionné dans les prérequis. Ceci permet d'éviter l'erreur `stdout is not a tty`, qui ici ne sort pas car la fonction de demande de mot de passe cachée raccroche sans rien dire.
+
 
 - aller dans le répertoire `C:\Users\acces.sig\Documents\mapillary_rm`
 - clic-droit > Git bash here
