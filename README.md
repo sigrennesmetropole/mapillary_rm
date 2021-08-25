@@ -64,6 +64,13 @@ python3 -m pip install modules_python/mapillary_tools-0.7.4-py3-none-any.whl
 Pour info : shfit + insert pour coller des commandes.
 
 
+Activer une session virtuelle Python
+
+**Pour toute opération (installation ou utilisation) on va se mettre dans une session virtuelle Python**. Voir [la procédure](python_venv.md) pour mettre en place une session virtuelle Python.
+
+`source ./venv/Scripts/activate
+
+
 Afficher l'aide
 
 	process_sequence.py -h
