@@ -91,39 +91,38 @@ Afficher l'aide
 	  --skip-upload      don't run upload of pictures
 
 
+Le principe est d'appeler le script python depuis le répertoire du script (soit le répertoire courant), puis le répertoire qui contient le fichier IML, puis spécifier l'utilisateur Mapillary pour téléverser les images.
 
-**Comme on a un problème avec les chemins Windows : on va dans le répertoire à traiter. Ensuite on appellera le répertoire mapillary_rm qui contient le script.** Conseil : se déplacer entièrement via la commande cd et en utilisant la touche tabulation. Très utile à cause des espaces dans les noms des répertoires.
 
-Exemple :
+Conseil : utiliser la touche tabulation pour naviguer dans le système de fichiers. Très utile à cause des espaces dans les noms des répertoires, car ceux-ci doivent être "échappés" avec un anti-slash.
 
-	cd /c/Users/acces.sig/Documents/mapillary_rm/demo/
-	cd /h/3_Photos/2017-04-10\ - \ Rennes/
+
+Exemple de chemin python : `/h/3_Photos/2017-10-04\ -\ RENNES\ -\ Corps_Nuds0410/`
 	
 
-Puis on choisit le niveau de traitement, en indiquant le chemin absolu vers `process_sequence.py`. 
 
 
 ### Juste analyser et traiter le fichier IML
 
 	
-	python /c/Users/acces.sig/Documents/mapillary_rm/process_sequence.py --skip-exif --skip-upload 2018-02-16 ./ sig_rm
+	python process_sequence.py --skip-exif --skip-upload 2018-02-16 /chemin_absolu_vers\ le\ repertoire/ sig_rm
 	
 
 
 ### Juste patcher les métadonnées EXIF des photos : pas de preprocess ni d'upload
 
-	python /c/Users/acces.sig/Documents/mapillary_rm/process_sequence.py --skip-preprocess --skip-upload 2018-02-16 ./ sig_rm
+	python mapillary_rm/process_sequence.py --skip-preprocess --skip-upload 2018-02-16 /chemin_absolu_vers\ le\ repertoire/ sig_rm sig_rm
 	
 	
 
 ### Juste l'upload
 
-	python /c/Users/acces.sig/Documents/mapillary_rm/process_sequence.py --skip-preprocess --skip-exif 2018-02-16 ./ sig_rm
+	python process_sequence.py --skip-preprocess --skip-exif 2018-02-16 /chemin_absolu_vers\ le\ repertoire/ sig_rm sig_rm
 
 
 ### La totale
 
-	python /c/Users/acces.sig/Documents/mapillary_rm/process_sequence.py 2018-02-16 ./ sig_rm
+	python mapillary_rm/process_sequence.py 2018-02-16 /chemin_absolu_vers\ le\ repertoire/ sig_rm sig_rm
 
 
 
