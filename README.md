@@ -23,25 +23,17 @@ Le script :
 - les modules python dans le répertoire `modules_python` ou listés dans le fichier `requirements.txt`
 
 
-## Ouvrir un shell Git bash
-
 **IMPORTANT** : pour pouvoir faire la saisie du mot de passe à l'étape de demande d'identification pour obtenir le token, sous git bash pour Windows il faut impérativement rajouter l'alias mentionné dans les prérequis. Ceci permet d'éviter l'erreur `stdout is not a tty`, qui ici ne sort pas car la fonction de demande de mot de passe cachée raccroche sans rien dire.
 
 
-- aller dans le répertoire `C:\Users\acces.sig\Documents\mapillary_rm`
-- clic-droit > Git bash here
-
-![](images/git_bash.png)
-
-
-## Activer une session virtuelle Python
-
-**Pour toute opération (installation ou utilisation) on va se mettre dans une session virtuelle Python**. Voir [la procédure](python_venv.md) pour mettre en place une session virtuelle Python.
-
-`source ./venv/Scripts/activate`
 
 
 ## Installation des librairies Python (à ne faire qu'une fois)
+
+Activer une session virtuelle Python.
+
+**Pour toute opération (installation ou utilisation) on va se mettre dans une session virtuelle Python**. Voir [la procédure](python_venv.md) pour mettre en place une session virtuelle Python.
+
 
 On installe les librairies, via un script car il y a un ordre à cause des dépendances
 
@@ -59,16 +51,22 @@ python3 -m pip install -r requirements.txt
 python3 -m pip install modules_python/mapillary_tools-0.7.4-py3-none-any.whl
 ```
 
+
 ## Utilisation
 
-Pour info : shfit + insert pour coller des commandes.
+Pour info : shift + insert pour coller des commandes.
+
+**Pour toute opération (installation ou utilisation) on va se mettre dans une session virtuelle Python**. Voir [la procédure](python_venv.md) pour mettre en place une session virtuelle Python (à faire 1 seule fois à l'installation).
 
 
-Activer une session virtuelle Python
+Pour utiliser le script, ouvrir une fenêtre Windows et aller dans `C:\\Users\acces.sig\Documents\mapillary_rm\`
 
-**Pour toute opération (installation ou utilisation) on va se mettre dans une session virtuelle Python**. Voir [la procédure](python_venv.md) pour mettre en place une session virtuelle Python.
+Ouvrir un shell Git bash : clic-droit > Git bash here
 
-`source ./venv/Scripts/activate
+![](images/git_bash.png)
+
+
+Activer une session virtuelle Python : `source ./venv/Scripts/activate`
 
 
 Afficher l'aide
@@ -94,11 +92,12 @@ Afficher l'aide
 
 
 
-**Comme on a un problème avec les chemins Windows : on va dans le répertoire à traiter. Ainsi on appellera le répertoire courant.**
+**Comme on a un problème avec les chemins Windows : on va dans le répertoire à traiter. Ensuite on appellera le répertoire mapillary_rm qui contient le script.** Conseil : se déplacer entièrement via la commande cd et en utilisant la touche tabulation. Très utile à cause des espaces dans les noms des répertoires.
 
 Exemple :
 
 	cd /c/Users/acces.sig/Documents/mapillary_rm/demo/
+	cd /h/3_Photos/2017-04-10\ - \ Rennes/
 	
 
 Puis on choisit le niveau de traitement, en indiquant le chemin absolu vers `process_sequence.py`. 
