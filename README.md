@@ -9,10 +9,8 @@ Mais les images récupérées ne sont pas bien crées et ne sont pas, dans leur 
 
 Le script :
 1. lit le fichier IML d'une campagne d'acquisition
-2. en dérive un fichier CSV avec les attributs utiles : image, time, x, y, z, h
-3. modifie les métadonnées EXIF des images pour injecter les données de localisation afn de les rendre 360°
-4. appelle les *mapillary tools* pour prétraiter les images (supression des images trop proches, par exemple)
-5. téléverse vers l'API de Mapillary
+2. en dérive un fichier Mapillary JSON avec les attributs utiles
+3. téléverse vers l'API de Mapillary
 
 
 ## Prérequis
@@ -72,7 +70,7 @@ Activer une session virtuelle Python : `source ./venv/Scripts/activate`
 Afficher l'aide
 
 	process_sequence.py -h
-	
+
 	usage: process_sequence.py [-h] [--skip-preprocess] [--skip-exif]
 							   [--skip-upload]
 							   DATE PATH MAPILLARY_USER
@@ -87,7 +85,6 @@ Afficher l'aide
 	optional arguments:
 	  -h, --help         show this help message and exit
 	  --skip-preprocess  don't run preprocessing of pictures
-	  --skip-exif        don't write updated EXIF metadata in pictures
 	  --skip-upload      don't run upload of pictures
 
 
@@ -98,26 +95,19 @@ Conseil : utiliser la touche tabulation pour naviguer dans le système de fichie
 
 
 Exemple de chemin python : `/h/3_Photos/2017-10-04\ -\ RENNES\ -\ Corps_Nuds0410/`
-	
+
 
 
 
 ### Juste analyser et traiter le fichier IML
 
-	
-	python process_sequence.py --skip-exif --skip-upload 2018-02-16 /chemin_absolu_vers\ le\ repertoire/ sig_rm
-	
 
+	python process_sequence.py --skip-upload 2018-02-16 /chemin_absolu_vers\ le\ repertoire/ sig_rm
 
-### Juste patcher les métadonnées EXIF des photos : pas de preprocess ni d'upload
-
-	python mapillary_rm/process_sequence.py --skip-preprocess --skip-upload 2018-02-16 /chemin_absolu_vers\ le\ repertoire/ sig_rm sig_rm
-	
-	
 
 ### Juste l'upload
 
-	python process_sequence.py --skip-preprocess --skip-exif 2018-02-16 /chemin_absolu_vers\ le\ repertoire/ sig_rm sig_rm
+	python process_sequence.py --skip-preprocess 2018-02-16 /chemin_absolu_vers\ le\ repertoire/ sig_rm sig_rm
 
 
 ### La totale
@@ -137,7 +127,7 @@ Exemple :
 	Reading IML file line 3/438103 (0%)
 	Start date read from IML : 2024-07-16T11:03:11.356000
 	Do you want to use your date instead (2018-02-16) ? (y/n) y
-	Set the capture start time (in HH:MM format) : 09:00   
+	Set the capture start time (in HH:MM format) : 09:00
 
 
 
@@ -149,6 +139,6 @@ menu Edition > métadonnées > Ouvrir la position GPS dans geohack
 
 ## Notes
 
-Pour la partie GDAL on utilise le .whl de ce site 
+Pour la partie GDAL on utilise le .whl de ce site
 https://www.lfd.uci.edu/~gohlke/pythonlibs/#gdal
 
