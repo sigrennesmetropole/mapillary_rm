@@ -131,3 +131,5 @@ dmypy.json
 # demo
 demo/0_mapillary.csv
 demo/panoramas/*
+
+.idea
