@@ -88,33 +88,41 @@ Afficher l'aide
 	  --skip-upload      don't run upload of pictures
 
 
+## Pour visualiser les photos téléversées :
+https://www.mapillary.com/app/
+courriel : sig@rennesmetropole.fr
+mdp : streetviewsuks
+user : sig_rm	  
+	  
+
 Le principe est d'appeler le script python depuis le répertoire du script (soit le répertoire courant), puis le répertoire qui contient le fichier IML, puis spécifier l'utilisateur Mapillary pour téléverser les images.
 
 
 Conseil : utiliser la touche tabulation pour naviguer dans le système de fichiers. Très utile à cause des espaces dans les noms des répertoires, car ceux-ci doivent être "échappés" avec un anti-slash.
-
+/ sig rm
 
 Exemple de chemin python : `/h/3_Photos/2017-10-04\ -\ RENNES\ -\ Corps_Nuds0410/`
 
 
 
-
 ### Juste analyser et traiter le fichier IML
 
-
 	python process_sequence.py --skip-upload 2018-02-16 /chemin_absolu_vers\ le\ repertoire/ sig_rm
-
+	
+				(exemple) /p  /p/3_photos/Noyal_01_28/ sig_rm
 
 ### Juste l'upload
 
 	python process_sequence.py --skip-preprocess 2018-02-16 /chemin_absolu_vers\ le\ repertoire/ sig_rm sig_rm
 
-
+				(exemple)  python process_sequence.py --skip-preprocess --skip-exif 2019-01-28  /p/3_photos/Noyal_01_28/ sig_rm
+	
+	
 ### La totale
 
-	python mapillary_rm/process_sequence.py 2018-02-16 /chemin_absolu_vers\ le\ repertoire/ sig_rm sig_rm
+	python process_sequence.py 2018-02-16 /chemin_absolu_vers\ le\ repertoire/ sig_rm sig_rm
 
-
+				(exemple)    2019-01-28  /p/3_photos/Noyal_01_28/ sig_rm
 
 A chaque lancement, le script va vérifier les dates dans le fichier IML et demander de valider ou corriger date et heure de début des prises de vues.
 Exemple :
@@ -142,3 +150,9 @@ menu Edition > métadonnées > Ouvrir la position GPS dans geohack
 Pour la partie GDAL on utilise le .whl de ce site
 https://www.lfd.uci.edu/~gohlke/pythonlibs/#gdal
 
+
+
+python process_sequence.py 2020-07-16 /h/3_Photos/2020-07-17/ sig_rm
+
+
+python process_sequence.py --skip-exif --skip-upload 2020-07-16 /h/3_Photos/2020-07-16/ sig_rm

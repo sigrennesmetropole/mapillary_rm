@@ -1,9 +1,9 @@
 #! <?xml version="1.0" encoding="UTF-8" ?>
 #! <WORKSPACE
 #    Ligne de commande pour exécuter le projet :
-#        "C:\Program Files (x86)\FME_2019\fme.exe" C:\Users\acces.sig\Documents\mapillary\reformatage_iml.fmw
-#              --SourceDataset_TEXTLINE "I:\3_Photos\StreetMapper Aout2016 - 2018-02-15 - Brece_15-02\Rennes - Brece_15-02 - original.iml"
-#              --DestDataset_TEXTLINE "I:\3_Photos\StreetMapper Aout2016 - 2018-02-15 - Brece_15-02\iml_reformate.iml"
+#        "C:\Program Files (x86)\FME_2019\fme.exe" \\VDR204968\Users\acces.sig\Documents\mapillary_rm\outils\reformatage_iml.fmw
+#              --SourceDataset_TEXTLINE "O:\3_Photos\St-Sulpice_14-02\St-Sulpice_14-02.iml"
+#              --DestDataset_TEXTLINE "O:\3_Photos\St-Sulpice_14-02\iml_reformate.iml.txt"
 #    
 #!   ATTR_TYPE_ENCODING="SDF"
 #!   BEGIN_PYTHON=""
@@ -12,14 +12,14 @@
 #!   DESCRIPTION=""
 #!   DESTINATION="NONE"
 #!   DESTINATION_ROUTING_FILE=""
-#!   DOC_EXTENTS="5031.4 982.886"
-#!   DOC_TOP_LEFT="476.255 -1306.26"
+#!   DOC_EXTENTS="5184.53 1028.38"
+#!   DOC_TOP_LEFT="476.255 -1351.76"
 #!   END_PYTHON=""
 #!   END_TCL=""
 #!   EXPLICIT_BOOKMARK_ORDER="false"
 #!   FME_BUILD_NUM="19817"
-#!   FME_DOCUMENT_GUID="f44f1d70-eaa4-4d8b-b900-de589622b327"
-#!   FME_DOCUMENT_PRIORGUID="195e68a1-e7ff-442c-9368-e43bf9aa160f"
+#!   FME_DOCUMENT_GUID="f6381cda-17f1-4b64-9c8e-621872f5ee5b"
+#!   FME_DOCUMENT_PRIORGUID="195e68a1-e7ff-442c-9368-e43bf9aa160f,f44f1d70-eaa4-4d8b-b900-de589622b327,d45afba8-6bb9-45a0-afbc-1192b9468f3d"
 #!   FME_GEOMETRY_HANDLING="Enhanced"
 #!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
 #!   FME_REPROJECTION_ENGINE="FME"
@@ -28,7 +28,7 @@
 #!   HISTORY=""
 #!   IGNORE_READER_FAILURE="No"
 #!   LAST_SAVE_BUILD="FME(R) 2019.2.2.0 (20200103 - Build 19817 - WIN32)"
-#!   LAST_SAVE_DATE="2020-12-23T16:48:38"
+#!   LAST_SAVE_DATE="2021-09-23T11:33:29"
 #!   LOG_FILE=""
 #!   LOG_MAX_RECORDED_FEATURES="200"
 #!   MARKDOWN_DESCRIPTION=""
@@ -47,7 +47,7 @@
 #!   TITLE=""
 #!   USAGE=""
 #!   USE_MARKDOWN=""
-#!   VIEW_POSITION="1568.77 -387.504"
+#!   VIEW_POSITION="1659.39 0"
 #!   WARN_INVALID_XFORM_PARAM="Yes"
 #!   WORKSPACE_VERSION="1"
 #!   ZOOM_SCALE="100"
@@ -66,7 +66,7 @@
 #!   WRITE_DEFS="false"
 #!   DEFLINE_TEMPLATE=""
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="fme_text_string char(50) fme_sweep_angle number(31,15) fme_primary_axis number(31,15) fme_geometry char(50) text_line_eol char(10) fme_type char(50) multi_reader_type char(50) multi_reader_full_id number(11,0) multi_reader_id number(11,0) fme_text_size number(31,15) fme_color char(50) text_line_type char(64) fme_dataset char(50) fme_start_angle number(31,15) fme_fill_color char(50) fme_rotation number(31,15) text_line_length number(6,0) text_line_number number(11,0) fme_feature_type char(50) fme_basename char(50) multi_reader_keyword char(50) fme_secondary_axis number(31,15)"
+#!   EXPOSABLE_ATTRS="fme_dataset char(50) text_line_number number(11,0) fme_sweep_angle number(31,15) fme_rotation number(31,15) fme_start_angle number(31,15) fme_text_size number(31,15) fme_feature_type char(50) fme_basename char(50) fme_type char(50) text_line_eol char(10) multi_reader_keyword char(50) fme_color char(50) fme_secondary_axis number(31,15) multi_reader_type char(50) fme_fill_color char(50) fme_primary_axis number(31,15) fme_geometry char(50) text_line_length number(6,0) multi_reader_full_id number(11,0) fme_text_string char(50) multi_reader_id number(11,0) text_line_type char(64)"
 #!   DEFLINE_PARMS=""
 #!   ATTR_INDEX_TYPES=""
 #!   ATTR_NAME_INVALID_CHARS=""
@@ -124,7 +124,7 @@
 #!   WRITE_DEFS="false"
 #!   DEFLINE_TEMPLATE=""
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="fme_basename char(50) fme_rotation number(31,15) fme_secondary_axis number(31,15) fme_text_string char(50) fme_type char(50) fme_color char(50) fme_fill_color char(50) fme_start_angle number(31,15) fme_geometry char(50) fme_sweep_angle number(31,15) fme_text_size number(31,15) text_line_eol char(10) fme_primary_axis number(31,15) fme_dataset char(50) fme_feature_type char(50)"
+#!   EXPOSABLE_ATTRS="fme_start_angle number(31,15) fme_text_size number(31,15) fme_basename char(50) fme_geometry char(50) text_line_eol char(10) fme_rotation number(31,15) fme_sweep_angle number(31,15) fme_text_string char(50) fme_type char(50) fme_dataset char(50) fme_fill_color char(50) fme_primary_axis number(31,15) fme_color char(50) fme_feature_type char(50) fme_secondary_axis number(31,15)"
 #!   DEFLINE_PARMS=""
 #!   ATTR_INDEX_TYPES=""
 #!   ATTR_NAME_INVALID_CHARS=""
@@ -134,7 +134,7 @@
 #!   DATASET_TYPE="FILE"
 #!   GENERATE_FME_BUILD_NUM="19817"
 #!   COORDSYS=""
-#!   FANOUT_EXPRESSION=""
+#!   FANOUT_EXPRESSION="&lt;Unused&gt;"
 #!   FANOUT_GROUP="NO"
 #! >
 #! <METAFILE_PARAMETER
@@ -636,8 +636,8 @@
 #!   IS_EDITABLE="false"
 #!   IDENTIFIER="2"
 #!   FEAT_GEOMTYPE="text_line_none"
-#!   POSITION="476.25456254562539 -675.62940629406296"
-#!   BOUNDING_RECT="476.25456254562539 -675.62940629406296 454 71"
+#!   POSITION="476.2545625456255 -678.75443754437549"
+#!   BOUNDING_RECT="476.2545625456255 -678.75443754437549 454 71"
 #!   ORDER="500000000000001"
 #!   COLLAPSED="false"
 #!   KEYWORD="TEXTLINE_1"
@@ -657,11 +657,11 @@
 #!   NODE_NAME="text_line"
 #!   FEATURE_TYPE_NAME=""
 #!   FEATURE_TYPE_NAME_QUALIFIER=""
-#!   IS_EDITABLE="true"
+#!   IS_EDITABLE="false"
 #!   IDENTIFIER="19"
 #!   FEAT_GEOMTYPE="text_line_none"
-#!   POSITION="5053.6581565815641 -707.1299062990629"
-#!   BOUNDING_RECT="5053.6581565815641 -707.1299062990629 454 71"
+#!   POSITION="5206.7846878468772 -707.1299062990629"
+#!   BOUNDING_RECT="5206.7846878468772 -707.1299062990629 454 71"
 #!   ORDER="500000000000014"
 #!   COLLAPSED="false"
 #!   KEYWORD="TEXTLINE_2"
@@ -677,26 +677,26 @@
 #! <DATASET 
 #!   NAME="TEXTLINE_1"
 #!   OVERRIDE="-TEXTLINE_1_DATASET"
-#!   DATASET="TEXTLINE_1/Rennes - Brece_15-02 - original.iml"
+#!   DATASET="TEXTLINE_1/St-Sulpice_14-02.iml"
 #! />
 #! </READER_DATASETS>
 #! <WRITER_DATASETS>
 #! <DATASET 
 #!   NAME="TEXTLINE_2"
 #!   OVERRIDE="-TEXTLINE_2_DATASET"
-#!   DATASET="TEXTLINE_2/iml_reformate.iml"
+#!   DATASET="TEXTLINE_2/iml_reformate.iml.txt"
 #! />
 #! </WRITER_DATASETS>
 #! </FMESERVER>
 #! <GLOBAL_PARAMETERS>
 #! <GLOBAL_PARAMETER
 #!   GUI_LINE="GUI MULTIFILE SourceDataset_TEXTLINE Text/Compressed_Text_Files(*.txt;*.txt.gz)|*.txt;*.txt.gz|Text_Files(*.txt)|*.txt|Compressed_Text_Files(*.txt.gz)|*.txt.gz|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|All_files(*)|* Fichier(s) source Text :"
-#!   DEFAULT_VALUE="I:\3_Photos\StreetMapper Aout2016 - 2018-02-15 - Brece_15-02\Rennes - Brece_15-02 - original.iml"
+#!   DEFAULT_VALUE="O:\3_Photos\St-Sulpice_14-02\St-Sulpice_14-02.iml"
 #!   IS_STAND_ALONE="false"
 #! />
 #! <GLOBAL_PARAMETER
 #!   GUI_LINE="GUI FILENAME DestDataset_TEXTLINE Text/Compressed_Text_Files(*.txt;*.txt.gz)|*.txt;*.txt.gz|Text_Files(*.txt)|*.txt|Compressed_Text_Files(*.txt.gz)|*.txt.gz|All_files(*)|* Fichier texte destination :"
-#!   DEFAULT_VALUE="I:\3_Photos\StreetMapper Aout2016 - 2018-02-15 - Brece_15-02\iml_reformate.iml"
+#!   DEFAULT_VALUE="O:\3_Photos\St-Sulpice_14-02\iml_reformate.iml.txt"
 #!   IS_STAND_ALONE="false"
 #! />
 #! </GLOBAL_PARAMETERS>
@@ -704,10 +704,10 @@
 #! <COMMENT
 #!   IDENTIFIER="13"
 #!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Image=1502_2_0000001.jpg&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#!   POSITION="1358.8824688246887 -498.37846878468775"
-#!   TOP_LEFT="1358.8824688246887 -498.37846878468775"
-#!   BOTTOM_RIGHT="1984.3948439484395 -597.12915629156282"
-#!   BOUNDING_RECT="1358.8824688246887 -498.37846878468775 625.51237512375087 98.750687506875067"
+#!   POSITION="1177.6306563065637 -498.3784687846877"
+#!   TOP_LEFT="1177.6306563065637 -498.3784687846877"
+#!   BOTTOM_RIGHT="1803.1430314303145 -597.12915629156282"
+#!   BOUNDING_RECT="1177.6306563065637 -498.3784687846877 625.51237512375087 98.750687506875067"
 #!   ORDER="500000000000008"
 #!   FOLLOW_ANCHOR="true"
 #!   INFO_NODE="false"
@@ -719,10 +719,10 @@
 #! <COMMENT
 #!   IDENTIFIER="14"
 #!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;0000001&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#!   POSITION="2174.3004448794491 -470.25318753187526"
-#!   TOP_LEFT="2174.3004448794491 -470.25318753187526"
-#!   BOTTOM_RIGHT="2628.3004448794491 -471.25318753187526"
-#!   BOUNDING_RECT="2174.3004448794491 -470.25318753187526 454 1"
+#!   POSITION="2039.9241011160125 -470.25318753187526"
+#!   TOP_LEFT="2039.9241011160125 -470.25318753187526"
+#!   BOTTOM_RIGHT="2493.9241011160125 -471.25318753187526"
+#!   BOUNDING_RECT="2039.9241011160125 -470.25318753187526 454 1"
 #!   ORDER="500000000000009"
 #!   FOLLOW_ANCHOR="true"
 #!   INFO_NODE="false"
@@ -734,10 +734,10 @@
 #! <COMMENT
 #!   IDENTIFIER="15"
 #!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;1&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#!   POSITION="2799.5283752837527 -470.25318753187526"
-#!   TOP_LEFT="2799.5283752837527 -470.25318753187526"
-#!   BOTTOM_RIGHT="3253.5283752837527 -471.25318753187526"
-#!   BOUNDING_RECT="2799.5283752837527 -470.25318753187526 454 1"
+#!   POSITION="3168.2820628206287 -470.25318753187526"
+#!   TOP_LEFT="3168.2820628206287 -470.25318753187526"
+#!   BOTTOM_RIGHT="3622.2820628206287 -471.25318753187526"
+#!   BOUNDING_RECT="3168.2820628206287 -470.25318753187526 454 1"
 #!   ORDER="500000000000010"
 #!   FOLLOW_ANCHOR="true"
 #!   INFO_NODE="false"
@@ -749,10 +749,10 @@
 #! <COMMENT
 #!   IDENTIFIER="16"
 #!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Image=stream_00000-000000_00001_0000001.jpg&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
-#!   POSITION="3072.7751877518781 -323.37671876718758"
-#!   TOP_LEFT="3072.7751877518781 -323.37671876718758"
-#!   BOTTOM_RIGHT="4118.7911879118792 -422.12740627406265"
-#!   BOUNDING_RECT="3072.7751877518781 -323.37671876718758 1046.0160001600011 98.750687506875067"
+#!   POSITION="3394.6534065340652 -323.37671876718758"
+#!   TOP_LEFT="3394.6534065340652 -323.37671876718758"
+#!   BOTTOM_RIGHT="4440.6694066940663 -422.12740627406265"
+#!   BOUNDING_RECT="3394.6534065340652 -323.37671876718758 1046.0160001600011 98.750687506875067"
 #!   ORDER="500000000000012"
 #!   FOLLOW_ANCHOR="true"
 #!   INFO_NODE="false"
@@ -771,8 +771,8 @@
 #!   IDENTIFIER="3"
 #!   TYPE="Tester"
 #!   VERSION="3"
-#!   POSITION="1396.8824688246887 -632.12915629156282"
-#!   BOUNDING_RECT="1396.8824688246887 -632.12915629156282 430 71"
+#!   POSITION="1215.6306563065637 -632.12915629156282"
+#!   BOUNDING_RECT="1215.6306563065637 -632.12915629156282 430 71"
 #!   ORDER="500000000000002"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -802,8 +802,8 @@
 #!   IDENTIFIER="5"
 #!   TYPE="SubstringExtractor"
 #!   VERSION="2"
-#!   POSITION="2174.2595625956264 -632.12915629156282"
-#!   BOUNDING_RECT="2174.2595625956264 -632.12915629156282 454 71"
+#!   POSITION="2039.8832188321899 -632.12915629156282"
+#!   BOUNDING_RECT="2039.8832188321899 -632.12915629156282 454 71"
 #!   ORDER="500000000000004"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -825,8 +825,8 @@
 #!   IDENTIFIER="9"
 #!   TYPE="StringFormatter"
 #!   VERSION="1"
-#!   POSITION="2771.9027190271904 -632.12915629156282"
-#!   BOUNDING_RECT="2771.9027190271904 -632.12915629156282 454 71"
+#!   POSITION="3140.6564065640664 -632.12915629156282"
+#!   BOUNDING_RECT="3140.6564065640664 -632.12915629156282 454 71"
 #!   ORDER="500000000000006"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -847,8 +847,8 @@
 #!   IDENTIFIER="11"
 #!   TYPE="StringConcatenator"
 #!   VERSION="7"
-#!   POSITION="3363.9027190271904 -632.12915629156282"
-#!   BOUNDING_RECT="3363.9027190271904 -632.12915629156282 454 71"
+#!   POSITION="3685.7809378093775 -632.12915629156282"
+#!   BOUNDING_RECT="3685.7809378093775 -632.12915629156282 454 71"
 #!   ORDER="500000000000011"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -890,6 +890,135 @@
 #!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Sorter"/>
 #! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="22"
+#!   TYPE="Inspector"
+#!   VERSION="5"
+#!   POSITION="5138.533625336252 -1280.7588125881259"
+#!   BOUNDING_RECT="5138.533625336252 -1280.7588125881259 454 71"
+#!   ORDER="500000000000015"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19817"
+#! >
+#!     <XFORM_PARM PARM_NAME="AREA_COLOR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PEN_COLOR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="POINTCLOUD_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_NUM_COLS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_NUM_ROWS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_START_COL" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_START_ROW" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_VISUALIZATION_OPTION" PARM_VALUE="No Reduction"/>
+#!     <XFORM_PARM PARM_NAME="TACKATTRS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="THINNER_INTERVAL" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_MAX_NUM_POINTS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_TYPE_DISPLAY" PARM_VALUE="No Thinning"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="VECTOR_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Sorter_Sorted"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="24"
+#!   TYPE="AttributeFilter"
+#!   VERSION="5"
+#!   POSITION="2572.0192501925035 -563.12915629156282"
+#!   BOUNDING_RECT="2572.0192501925035 -563.12915629156282 454 71"
+#!   ORDER="500000000000019"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19817"
+#! >
+#!     <OUTPUT_FEAT NAME="&lt;lt&gt;EMPTY&lt;gt&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="text_line_data" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="text_line_number" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="index_substring" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="&lt;lt&gt;MISSING&lt;gt&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="text_line_data" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="text_line_number" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="index_substring" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="&lt;lt&gt;NULL&lt;gt&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="text_line_data" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="text_line_number" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="index_substring" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <OUTPUT_FEAT NAME="&lt;lt&gt;UNFILTERED&lt;gt&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="3"/>
+#!     <XFORM_ATTR ATTR_NAME="text_line_data" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="text_line_number" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="index_substring" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <OUTPUT_FEAT NAME="opped&lt;space&gt;F"/>
+#!     <FEAT_COLLAPSED COLLAPSED="4"/>
+#!     <XFORM_ATTR ATTR_NAME="text_line_data" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="text_line_number" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="index_substring" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_NAME" PARM_VALUE="index_substring"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_VALUES" PARM_VALUE="&lt;lt&gt;Empty&lt;gt&gt;,&lt;lt&gt;Missing&lt;gt&gt;,&lt;lt&gt;Null&lt;gt&gt;,&lt;lt&gt;Unfiltered&lt;gt&gt;,opped&lt;space&gt;F"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_VALUES_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PRESERVE_FEATURE_ORDER" PARM_VALUE="Per Output Port"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeFilter"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="26"
+#!   TYPE="Inspector"
+#!   VERSION="5"
+#!   POSITION="3462.0350003500034 -1082.130656306563"
+#!   BOUNDING_RECT="3462.0350003500034 -1082.130656306563 557.00106825772946 71"
+#!   ORDER="500000000000020"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19817"
+#! >
+#!     <XFORM_PARM PARM_NAME="AREA_COLOR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PEN_COLOR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="POINTCLOUD_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_NUM_COLS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_NUM_ROWS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_START_COL" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_START_ROW" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_VISUALIZATION_OPTION" PARM_VALUE="No Reduction"/>
+#!     <XFORM_PARM PARM_NAME="TACKATTRS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="THINNER_INTERVAL" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_MAX_NUM_POINTS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_TYPE_DISPLAY" PARM_VALUE="No Thinning"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="VECTOR_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeFilter_opped_F"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="30"
+#!   TYPE="Inspector"
+#!   VERSION="5"
+#!   POSITION="2572.0192501925035 -1137.6306563065632"
+#!   BOUNDING_RECT="2572.0192501925035 -1137.6306563065632 608.00106825772946 71"
+#!   ORDER="500000000000021"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19817"
+#! >
+#!     <XFORM_PARM PARM_NAME="AREA_COLOR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PEN_COLOR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="POINTCLOUD_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_NUM_COLS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_NUM_ROWS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_START_COL" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_START_ROW" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_VISUALIZATION_OPTION" PARM_VALUE="No Reduction"/>
+#!     <XFORM_PARM PARM_NAME="TACKATTRS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="THINNER_INTERVAL" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_MAX_NUM_POINTS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_TYPE_DISPLAY" PARM_VALUE="No Thinning"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="VECTOR_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="SubstringExtractor_Output"/>
+#! </TRANSFORMER>
 #! </TRANSFORMERS>
 #! <FEAT_LINKS>
 #! <FEAT_LINK
@@ -904,7 +1033,7 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="6"
+#!   IDENTIFIER="27"
 #!   SOURCE_NODE="3"
 #!   TARGET_NODE="5"
 #!   SOURCE_PORT_DESC="fo 0 PASSED"
@@ -915,13 +1044,24 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="10"
+#!   IDENTIFIER="25"
 #!   SOURCE_NODE="5"
-#!   TARGET_NODE="9"
+#!   TARGET_NODE="24"
 #!   SOURCE_PORT_DESC="fo 0 OUTPUT"
 #!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
 #!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="31"
+#!   SOURCE_NODE="5"
+#!   TARGET_NODE="30"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="1"
 #!   HIDDEN="false"
 #!   EXTRA_POINTS=""
 #! />
@@ -959,6 +1099,17 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
+#!   IDENTIFIER="23"
+#!   SOURCE_NODE="17"
+#!   TARGET_NODE="22"
+#!   SOURCE_PORT_DESC="fo 0 SORTED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="false"
+#!   EXECUTION_IDX="1"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
 #!   IDENTIFIER="21"
 #!   SOURCE_NODE="3"
 #!   TARGET_NODE="17"
@@ -968,6 +1119,28 @@
 #!   EXECUTION_IDX="0"
 #!   HIDDEN="false"
 #!   EXTRA_POINTS="2162 -1306 4140 -1278"
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="28"
+#!   SOURCE_NODE="24"
+#!   TARGET_NODE="9"
+#!   SOURCE_PORT_DESC="fo 3 &lt;lt&gt;lt&lt;gt&gt;UNFILTERED&lt;lt&gt;gt&lt;gt&gt;"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="29"
+#!   SOURCE_NODE="24"
+#!   TARGET_NODE="26"
+#!   SOURCE_PORT_DESC="fo 4 opped&lt;lt&gt;space&lt;gt&gt;F"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
 #! />
 #! </FEAT_LINKS>
 #! <BREAKPOINTS>
@@ -982,9 +1155,9 @@
 
 FME_PYTHON_VERSION 37
 GUI IGNORE SourceDataset_TEXTLINE_1,TEXTLINE_IN_FME_GROUP_NAMED1_TEXTLINE_1,TEXTLINE_IN_READ_WHOLE_FILE_AT_ONCE_TEXTLINE_1,TEXTLINE_IN_READ_BOTTOM_UP_TEXTLINE_1,TEXTLINE_IN_SKIP_LINES_TEXTLINE_1,TEXTLINE_IN_SKIP_FOOTER_TEXTLINE_1,TEXTLINE_IN_FME_GROUP_NAMED2_TEXTLINE_1,TEXTLINE_IN_ENCODING_TEXTLINE_1,TEXTLINE_IN_NETWORK_AUTHENTICATION_TEXTLINE_1,DestDataset_TEXTLINE_2,TEXTLINE_OUT_FME_GROUP_NAMED1_TEXTLINE_2,TEXTLINE_OUT_OVERWRITE_FILE_TEXTLINE_2,TEXTLINE_OUT_FME_GROUP_NAMED2_TEXTLINE_2,TEXTLINE_OUT_END_OF_LINE_TEXTLINE_2,TEXTLINE_OUT_WRITE_LAST_EOL_TEXTLINE_2,TEXTLINE_OUT_ENCODING_TEXTLINE_2,TEXTLINE_OUT_WRITE_UTF8_BOM_TEXTLINE_2,TEXTLINE_OUT_FME_GROUP_NAMED3_TEXTLINE_2,TEXTLINE_OUT_MIME_TYPE_TEXTLINE_2
-DEFAULT_MACRO SourceDataset_TEXTLINE I:\3_Photos\StreetMapper Aout2016 - 2018-02-15 - Brece_15-02\Rennes - Brece_15-02 - original.iml
+DEFAULT_MACRO SourceDataset_TEXTLINE O:\3_Photos\St-Sulpice_14-02\St-Sulpice_14-02.iml
 GUI MULTIFILE SourceDataset_TEXTLINE Text/Compressed_Text_Files(*.txt;*.txt.gz)|*.txt;*.txt.gz|Text_Files(*.txt)|*.txt|Compressed_Text_Files(*.txt.gz)|*.txt.gz|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|All_files(*)|* Fichier(s) source Text :
-DEFAULT_MACRO DestDataset_TEXTLINE I:\3_Photos\StreetMapper Aout2016 - 2018-02-15 - Brece_15-02\iml_reformate.iml
+DEFAULT_MACRO DestDataset_TEXTLINE O:\3_Photos\St-Sulpice_14-02\iml_reformate.iml.txt
 GUI FILENAME DestDataset_TEXTLINE Text/Compressed_Text_Files(*.txt;*.txt.gz)|*.txt;*.txt.gz|Text_Files(*.txt)|*.txt|Compressed_Text_Files(*.txt.gz)|*.txt.gz|All_files(*)|* Fichier texte destination :
 INCLUDE [ if {{$(SourceDataset_TEXTLINE)} == {}} { puts_real {Parameter 'SourceDataset_TEXTLINE' must be given a value.}; exit 1; }; ]
 INCLUDE [ if {{$(DestDataset_TEXTLINE)} == {}} { puts_real {Parameter 'DestDataset_TEXTLINE' must be given a value.}; exit 1; }; ]
@@ -1159,6 +1332,12 @@ MACRO WORKSPACE_NAME reformatage_iml
 MACRO FME_VIEWER_APP fmedatainspector
 # -------------------------------------------------------------------------
 
+INCLUDE [ if {[info exists env(FME_TEMP)] && [file isdirectory $env(FME_TEMP)]} {set gVisualizerTemp $env(FME_TEMP)}  elseif {[info exists env(TEMP)] && [file isdirectory $env(TEMP)]}  {set gVisualizerTemp $env(TEMP)}  elseif { $tcl_platform(platform) == "unix" } {set gVisualizerTemp "/tmp"} else {set gVisualizerTemp c:};  regsub -all {[ ,&]} {$(WORKSPACE_NAME)} {_} wsname; set gVisualizerTemp $gVisualizerTemp/${wsname}_[clock format [clock seconds] -format %H%M%S];  puts "MACRO WORKSPACE_TEMP_DIR $gVisualizerTemp"; 
+MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/inspector.ffs
+MACRO VISUALIZER_SCHEMA_FILE $(WORKSPACE_TEMP_DIR)/inspector.fsc
+MACRO VISUALIZER_CREATE_SPATIAL_INDEX YES
+# -------------------------------------------------------------------------
+
 FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   MULTI_READER_KEYWORD $(DATASET_KEYWORD_TEXTLINE_1)   INPUT FEATURE_TYPE *    ROUTE TEXTLINE TEXTLINE_1::text_line multi_reader_keyword,$(DATASET_KEYWORD_TEXTLINE_1) TO FME_GENERIC ::text_line ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
 TEXTLINE_1_MERGE_DEF TEXTLINE_1::text_line EXACT text_line
 # -------------------------------------------------------------------------
@@ -1174,19 +1353,72 @@ FACTORY_DEF * TestFactory    FACTORY_NAME Tester_Image_    INPUT  FEATURE_TYPE t
 Tcl2 proc SubstringExtractor_fixLastIndex {lastValue} {     if {$lastValue < -1} {         incr lastValue;         return "end$lastValue";     }     elseif {$lastValue == -1} {         return "end";     }     else {         return $lastValue;     } }
 Tcl2 proc SubstringExtractor_extract {startIdx endIdx} {     FME_SetAttribute [FME_DecodeText index_substring]         [string range [FME_DecodeTextOrAttr @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>text_line_data<closeparen>,SubstringExtractor)]                       [SubstringExtractor_fixLastIndex $startIdx]                       [SubstringExtractor_fixLastIndex $endIdx]]     }
 FACTORY_DEF * TeeFactory    FACTORY_NAME SubstringExtractor    INPUT  FEATURE_TYPE Tester_Image__PASSED    OUTPUT FEATURE_TYPE SubstringExtractor_OUTPUT         @Tcl2("SubstringExtractor_extract -11 -5")
+FACTORY_DEF * TeeFactory   FACTORY_NAME "SubstringExtractor OUTPUT Splitter"   INPUT FEATURE_TYPE SubstringExtractor_OUTPUT   OUTPUT FEATURE_TYPE SubstringExtractor_OUTPUT_0_oHdpXUbnb4M=   OUTPUT FEATURE_TYPE SubstringExtractor_OUTPUT_1_sYl66lqXOkM=
+# -------------------------------------------------------------------------
+# Assumption is that the workspace temp dir has been already set and created.  See controldefs.cpp - ControlDefs::writeVisualizerTempDir
+DEFAULT_MACRO WORKSPACE_TEMP_DIR
+INCLUDE [    set safeName "[regsub -all {[^a-zA-Z0-9]} {SubstringExtractor_Output} _]_[expr round(rand() * 1000000)]_[clock clicks  -milliseconds]";    puts "MACRO SAFE_FFS_NAME $safeName"; ]
+FACTORY_DEF {*} InspectorFactory    FACTORY_NAME SubstringExtractor_Output_Prepper    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE SubstringExtractor_OUTPUT_1_sYl66lqXOkM=    GROUP_ATTRIBUTE __inspector_feature_type_attr__    GROUP_BY {  }    GROUP_ATTRIBUTE_PREFIX { SubstringExtractor_Output }    RASTER_REDUCTION NoReduction    POINT_CLOUD_REDUCTION NO_THINNING    OUTPUT RESULT FEATURE_TYPE __viewme__
+# Now route all the features into the recorder, changing their
+# feature type to the transformer name so that they view nicely
+DEFAULT_MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/$(SAFE_FFS_NAME).ffs
+DEFAULT_MACRO VISUALIZER_CREATE_SPATIAL_INDEX NO
+# [PR#45549] The Data Inspector will limit the maximum number of features
+# it reads on WIN32, so we will correspondingly limit the number of
+# features we record here using the MAX_FEATURES_TO_RECORD directive.
+FACTORY_DEF * RecorderFactory    FACTORY_NAME SubstringExtractor_Output_Recorder    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT FEATURE_TYPE __viewme__       _wb_termination_feature Yes       @FeatureType(TERMINATOR_@Value(_wb_termination_xformer))    INPUT FEATURE_TYPE __viewme__       @FeatureType(@Value(__inspector_feature_type_attr__))       @RemoveAttributes(__inspector_feature_type_attr__)    FEATURE_FILE "$(VISUALIZER_FEATURE_FILE)"    STORE_SCANNED_SCHEMA YES    CREATE_SPATIAL_INDEX "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    INSPECTOR "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    FSC_SCHEMA text_line_data,varchar<openparen>255<closeparen>,text_line_number,varchar<openparen>255<closeparen>,index_substring,varchar<openparen>255<closeparen>    MODE RECORD    STORE_SCANNED_METADATA    RECORD_DIRECTLY_TO_DISK YES    MAX_FEATURES_TO_RECORD WIN32 2000000
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeFilter    INPUT  FEATURE_TYPE SubstringExtractor_OUTPUT_0_oHdpXUbnb4M=    OUTPUT FEATURE_TYPE AttributeFilter_FILTER
+FACTORY_DEF * AttributeFilterFactory FACTORY_NAME AttributeFilter_Filter COMMAND_PARM_EVALUATION SINGLE_PASS INPUT FEATURE_TYPE AttributeFilter_FILTER FILTER_ATTRIBUTE index_substring FILTER_VALUES <lt>EMPTY<gt> <lt>MISSING<gt> <lt>NULL<gt> <lt>UNFILTERED<gt> opped<space>F PRESERVE_FEATURE_ORDER PER_OUTPUT_PORT OUTPUT <lt>EMPTY<gt> FEATURE_TYPE AttributeFilter_<lt>EMPTY<gt> OUTPUT <lt>MISSING<gt> FEATURE_TYPE AttributeFilter_<lt>MISSING<gt> OUTPUT <lt>NULL<gt> FEATURE_TYPE AttributeFilter_<lt>NULL<gt> OUTPUT <lt>UNFILTERED<gt> FEATURE_TYPE AttributeFilter_<lt>UNFILTERED<gt> OUTPUT opped<space>F FEATURE_TYPE AttributeFilter_opped<space>F
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter <lt>EMPTY<gt> Transformer Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_<lt>EMPTY<gt>
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter <lt>MISSING<gt> Transformer Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_<lt>MISSING<gt>
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter <lt>NULL<gt> Transformer Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_<lt>NULL<gt>
+# -------------------------------------------------------------------------
+# Assumption is that the workspace temp dir has been already set and created.  See controldefs.cpp - ControlDefs::writeVisualizerTempDir
+DEFAULT_MACRO WORKSPACE_TEMP_DIR
+INCLUDE [    set safeName "[regsub -all {[^a-zA-Z0-9]} {AttributeFilter_opped_F} _]_[expr round(rand() * 1000000)]_[clock clicks  -milliseconds]";    puts "MACRO SAFE_FFS_NAME $safeName"; ]
+FACTORY_DEF {*} InspectorFactory    FACTORY_NAME AttributeFilter_opped_F_Prepper    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE AttributeFilter_opped<space>F    GROUP_ATTRIBUTE __inspector_feature_type_attr__    GROUP_BY {  }    GROUP_ATTRIBUTE_PREFIX { AttributeFilter_opped_F }    RASTER_REDUCTION NoReduction    POINT_CLOUD_REDUCTION NO_THINNING    OUTPUT RESULT FEATURE_TYPE __viewme__
+# Now route all the features into the recorder, changing their
+# feature type to the transformer name so that they view nicely
+DEFAULT_MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/$(SAFE_FFS_NAME).ffs
+DEFAULT_MACRO VISUALIZER_CREATE_SPATIAL_INDEX NO
+# [PR#45549] The Data Inspector will limit the maximum number of features
+# it reads on WIN32, so we will correspondingly limit the number of
+# features we record here using the MAX_FEATURES_TO_RECORD directive.
+FACTORY_DEF * RecorderFactory    FACTORY_NAME AttributeFilter_opped_F_Recorder    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT FEATURE_TYPE __viewme__       _wb_termination_feature Yes       @FeatureType(TERMINATOR_@Value(_wb_termination_xformer))    INPUT FEATURE_TYPE __viewme__       @FeatureType(@Value(__inspector_feature_type_attr__))       @RemoveAttributes(__inspector_feature_type_attr__)    FEATURE_FILE "$(VISUALIZER_FEATURE_FILE)"    STORE_SCANNED_SCHEMA YES    CREATE_SPATIAL_INDEX "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    INSPECTOR "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    FSC_SCHEMA text_line_data,varchar<openparen>255<closeparen>,text_line_number,varchar<openparen>255<closeparen>,index_substring,varchar<openparen>255<closeparen>    MODE RECORD    STORE_SCANNED_METADATA    RECORD_DIRECTLY_TO_DISK YES    MAX_FEATURES_TO_RECORD WIN32 2000000
 # -------------------------------------------------------------------------
 Tcl2    regsub {^[^a-zA-Z]*([a-zA-Z]).*} {d} {\1} formatChar;    if { [string first $formatChar {duiofxeEgG}] != -1 } {       proc {StringFormatter_getAttribute} {attr} { return [regsub {^(-?)0*(.)} [FME_GetAttribute $attr] {\1\2}] }    }    else    {       proc {StringFormatter_getAttribute} {attr} { return [FME_GetAttribute $attr] }    }
 Tcl2 proc StringFormatter_formatter {} {    set attrs [split {index_substring} {,}];    foreach attr $attrs {       set attrVal [FME_GetAttribute $attr];       set length [string length $attrVal];       if {$length > 0} {          FME_SetAttribute $attr [format %d [{StringFormatter_getAttribute} $attr]];       };    }; }
-FACTORY_DEF * TeeFactory    FACTORY_NAME StringFormatter    INPUT  FEATURE_TYPE SubstringExtractor_OUTPUT    OUTPUT FEATURE_TYPE StringFormatter_OUTPUT         @Tcl2(StringFormatter_formatter)
+FACTORY_DEF * TeeFactory    FACTORY_NAME StringFormatter    INPUT  FEATURE_TYPE AttributeFilter_<lt>UNFILTERED<gt>    OUTPUT FEATURE_TYPE StringFormatter_OUTPUT         @Tcl2(StringFormatter_formatter)
 # -------------------------------------------------------------------------
 Tcl2 proc StringConcatenator_evaluator {} {    if {{OUTGOING} == {OUTGOING}} {      set attr [FME_DecodeText {text_line_data}];      if {[string length $attr] == 0} { return; };      set attrs [list [FME_EncodeText $attr]];    } else {      set attrAll {<Unused>};      if {[string length $attrAll] == 0} { return; };      set attrs [split {<Unused>} { }];    };    set parmList {{EvaluateExpression} {ATTR_CREATE_EXPR_PROPOGATE_MISSING_FDIV}};    foreach attr $attrs {     lappend parmList $attr;     lappend parmList {"Image=stream_00000-000000_<at>PadLeft<openparen><at>Value<openparen>index_substring<closeparen><comma>5<comma>0<closeparen>_<at>PadLeft<openparen><at>Value<openparen>index_substring<closeparen><comma>7<comma>0<closeparen>.jpg"};    };    lappend parmList {StringConcatenator};    eval FME_Execute $parmList; }
 FACTORY_DEF * TeeFactory    FACTORY_NAME StringConcatenator    INPUT  FEATURE_TYPE StringFormatter_OUTPUT    OUTPUT FEATURE_TYPE StringConcatenator_OUTPUT         @Tcl2("StringConcatenator_evaluator ")
 # -------------------------------------------------------------------------
 FACTORY_DEF * SortFactory    FACTORY_NAME Sorter    INPUT  FEATURE_TYPE StringConcatenator_OUTPUT    INPUT  FEATURE_TYPE Tester_Image__FAILED    FLUSH_WHEN_GROUPS_CHANGE No    SORT_BY text_line_number NUMERIC ASCENDING    OUTPUT SORTED FEATURE_TYPE Sorter_SORTED
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Sorter SORTED Splitter"   INPUT FEATURE_TYPE Sorter_SORTED   OUTPUT FEATURE_TYPE Sorter_SORTED_0_3iJewJ+xcb8=   OUTPUT FEATURE_TYPE Sorter_SORTED_1_AdG4IKX8gxs=
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Sorter_SORTED_1_AdG4IKX8gxs= Disabled Nuker -1 23"   INPUT FEATURE_TYPE Sorter_SORTED_1_AdG4IKX8gxs=
+# -------------------------------------------------------------------------
+# Assumption is that the workspace temp dir has been already set and created.  See controldefs.cpp - ControlDefs::writeVisualizerTempDir
+DEFAULT_MACRO WORKSPACE_TEMP_DIR
+INCLUDE [    set safeName "[regsub -all {[^a-zA-Z0-9]} {Sorter_Sorted} _]_[expr round(rand() * 1000000)]_[clock clicks  -milliseconds]";    puts "MACRO SAFE_FFS_NAME $safeName"; ]
+FACTORY_DEF {*} InspectorFactory    FACTORY_NAME Sorter_Sorted_Prepper    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE Sorter_SORTED_1_AdG4IKX8gxs=    GROUP_ATTRIBUTE __inspector_feature_type_attr__    GROUP_BY {  }    GROUP_ATTRIBUTE_PREFIX { Sorter_Sorted }    RASTER_REDUCTION NoReduction    POINT_CLOUD_REDUCTION NO_THINNING    OUTPUT RESULT FEATURE_TYPE __viewme__
+# Now route all the features into the recorder, changing their
+# feature type to the transformer name so that they view nicely
+DEFAULT_MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/$(SAFE_FFS_NAME).ffs
+DEFAULT_MACRO VISUALIZER_CREATE_SPATIAL_INDEX NO
+# [PR#45549] The Data Inspector will limit the maximum number of features
+# it reads on WIN32, so we will correspondingly limit the number of
+# features we record here using the MAX_FEATURES_TO_RECORD directive.
+FACTORY_DEF * RecorderFactory    FACTORY_NAME Sorter_Sorted_Recorder    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT FEATURE_TYPE __viewme__       _wb_termination_feature Yes       @FeatureType(TERMINATOR_@Value(_wb_termination_xformer))    INPUT FEATURE_TYPE __viewme__       @FeatureType(@Value(__inspector_feature_type_attr__))       @RemoveAttributes(__inspector_feature_type_attr__)    FEATURE_FILE "$(VISUALIZER_FEATURE_FILE)"    STORE_SCANNED_SCHEMA YES    CREATE_SPATIAL_INDEX "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    INSPECTOR "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    FSC_SCHEMA text_line_data,varchar<openparen>255<closeparen>,text_line_number,varchar<openparen>255<closeparen>,index_substring,varchar<openparen>255<closeparen>    MODE RECORD    STORE_SCANNED_METADATA    RECORD_DIRECTLY_TO_DISK YES    MAX_FEATURES_TO_RECORD WIN32 2000000
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC Sorter_SORTED TO TEXTLINE __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>text_line<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC Sorter_SORTED_0_3iJewJ+xcb8= TO TEXTLINE __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>text_line<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
 
+# -------------------------------------------------------------------------
+
+DEFAULT_MACRO FME_LAUNCH_VIEWER_APP NO
+FACTORY_DEF * CreationFactory    FACTORY_NAME VisualizerProcessor   CREATE_AT_END   OUTPUT FEATURE_TYPE __NUKEME__   @TCL("if {{$(FME_LAUNCH_VIEWER_APP)} == {YES}} {  if [file exists {$(WORKSPACE_TEMP_DIR)}] {set files [glob -nocomplain -directory  {$(WORKSPACE_TEMP_DIR)} -tails *.ffs];   if {[llength $files] == 1} {    set theFile {$(WORKSPACE_TEMP_DIR)/};   append theFile [lindex $files 0];   eval FME_Execute System \173\042$(FME_HOME_UNIX)/fmedatainspector\042 --visualizer --single-application --delete-on-close --no-source-prompt -f FFS \042$theFile\042 & \175;  } elseif { [llength $files] == 0 } {  catch { file delete -force {$(WORKSPACE_TEMP_DIR)} };  } else {  set filesNoExt {}; set lastfile {}; foreach {fileName} [lsort $files] { set fileNoExt [string trimright $fileName {.ffs}]; if [regexp {(.*)_[0-9]*$} $fileNoExt wholething fileNoExtBase] {  if { $fileNoExtBase == $lastfile } { continue } }; set lastfile $fileNoExt; lappend filesNoExt $fileNoExt };  eval FME_Execute System \173\042$(FME_HOME_UNIX)/fmedatainspector\042 --visualizer --single-application --delete-on-close --no-source-prompt -d {$(WORKSPACE_TEMP_DIR)} -a ffs -f FFS $filesNoExt & \175; }; }; }; ")
+FACTORY_DEF * TeeFactory    FACTORY_NAME VisualizerCleaner   INPUT FEATURE_TYPE __NUKEME__
