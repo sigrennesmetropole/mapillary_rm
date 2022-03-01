@@ -221,6 +221,13 @@ if not args.nopreprocess:
 				#currentMetadata["r"] = hrp[1] # Not used by Mapillary script
 				#currentMetadata["p"] = hrp[2] # Not used by Mapillary script
 
+			# OPK = Omega/phi/kappa (alternative version of HRP)
+			elif key == "Opk":
+				opk = value.split(" ")
+				# ~ currentMetadata["p"] = opk[0] # Pitch, not used by Mapillary script
+				# ~ currentMetadata["r"] = opk[1] # Roll, not used by Mapillary script
+				currentMetadata["h"] = opk[2]
+
 	# Write metadata as CSV
 	csvpath = join(args.folder, "0_mapillary.csv")
 	with open(csvpath, 'w', newline='') as csvfile:
