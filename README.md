@@ -88,12 +88,6 @@ Afficher l'aide
 	  --skip-upload      don't run upload of pictures
 
 
-## Pour visualiser les photos téléversées :
-https://www.mapillary.com/app/
-courriel : sig@rennesmetropole.fr
-mdp : streetviewsuks
-user : sig_rm	  
-	  
 
 Le principe est d'appeler le script python depuis le répertoire du script (soit le répertoire courant), puis le répertoire qui contient le fichier IML, puis spécifier l'utilisateur Mapillary pour téléverser les images.
 
